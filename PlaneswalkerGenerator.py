@@ -386,6 +386,7 @@ splitTime = 0
 useSavedData = True
 if(not useSavedData):
 	mtg_db = MtgDB("my_db.fs")
+	mtg_db.scryfall_update()
 	scryfall_cards = mtg_db.root.scryfall_cards
 	scryfall_sets = mtg_db.root.scryfall_sets
 	printStatus("Initialize MTG Database")
@@ -447,7 +448,7 @@ printStatus("Convert Oracle text to ability objects")
 
 print("---Planeswalkers---")
 genImageFolder = str(os.getcwd())+"\\generated_card_images\\"
-for i in range(100):
+for i in range(12):
 	rPW1 = random.choice(pw_parsed)
 	rPW2 = random.choice(pw_parsed)
 	rPW3 = random.choice(pw_parsed)
