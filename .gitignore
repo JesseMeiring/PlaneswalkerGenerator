@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.png
+
+my_db.fs
+
+my_db.fs.index
+
+my_db.fs.lock
+
+my_db.fs.old
+
+my_db.fs.tmp
